@@ -1,7 +1,6 @@
 package bo.gob.asfi.tipos.app;
 
 import bo.gob.asfi.tipos.utils.Common;
-
 /**
  * Created by fernando on 10/10/16.
  */
@@ -28,6 +27,9 @@ public class Enumerations
 
 		System.out.println("");
 		System.out.println(" años como UsuarioTipoEnum.ESTUDIANTE: " + UsuarioTipoEnum.ESTUDIANTE.getYearsAs(15) );
+
+		System.out.println("");
+		System.out.println(" ¿Cuando toca Ciencias Naturales? " + ClasesEnum.CIENCIASNATURALES.periodo() );
 
 		System.out.println("");
 		for (UsuarioTipoEnum tipo : UsuarioTipoEnum.values()) {
