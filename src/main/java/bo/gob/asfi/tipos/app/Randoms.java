@@ -16,7 +16,7 @@ public class Randoms
 
 		Random rand = new Random();
 
-		//rand.setSeed( 1234 );
+		rand.setSeed( 1234 );
 
 		int  n = rand.nextInt(50) + 1;
 		System.out.println("número aleatorio entre 1 y 50 (entero): " + n);
@@ -24,11 +24,13 @@ public class Randoms
 		long  l = rand.nextLong();
 		System.out.println("número aleatorio (long): " + l);
 
+
 		double d = rand.nextDouble();
 		System.out.println("número aleatorio (double): " + d);
 
 		boolean b = rand.nextBoolean();
 		System.out.println("variable aleatoria (boolean): " + b);
+
 
 		//el mismo objeto Random es reusado aqui
 		System.out.println("100 números aleatorios: ");
@@ -38,6 +40,7 @@ public class Randoms
 			}
 			System.out.println();
 		}
+
 	}
 
 	public static void main(String[] args)
