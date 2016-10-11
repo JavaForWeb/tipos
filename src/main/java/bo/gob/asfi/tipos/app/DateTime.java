@@ -33,7 +33,7 @@ public class DateTime
 		String fechaFormato1 = sdf.format(now);
 		System.out.println( fechaFormato1);
 
-		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MMM/YYYY H:m:s");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MMMM/YYYY H:m:s");
 		String fechaFormato2 = sdf2.format(now);
 		System.out.println( fechaFormato2);
 
