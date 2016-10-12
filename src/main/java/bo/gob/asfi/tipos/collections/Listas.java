@@ -92,8 +92,7 @@ public class Listas
 		}
 
 
-		for( usuario : usuarioList) {
-			Usuario usuario = iterator.next();
+		for( Usuario usuario : usuarioList) {
 			System.out.println(usuario.getName() + " " + usuario.getAddress() + " " + usuario.getBirthDate());
 		}
 
