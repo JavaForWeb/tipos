@@ -13,6 +13,8 @@ public class Usuario
 
 	private Date birthDate;
 
+	private Double saldo;
+
 	public String getName()
 	{
 		return name;
@@ -43,11 +45,22 @@ public class Usuario
 		this.birthDate = birthDate;
 	}
 
+	public Double getSaldo()
+	{
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo)
+	{
+		this.saldo = saldo;
+	}
+
 	public Usuario(String name)
 	{
 		this.name = name;
 		this.address = "address of " + name;
 		this.birthDate = new Date();
+		this.saldo = 0.0;
 	}
 
 	public Usuario()
@@ -55,6 +68,7 @@ public class Usuario
 		this.name = null;
 		this.address = null;
 		this.birthDate = null;
+		this.saldo = null;
 	}
 
 }
