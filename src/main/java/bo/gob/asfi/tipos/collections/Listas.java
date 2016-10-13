@@ -5,6 +5,7 @@ import bo.gob.asfi.tipos.model.Usuario;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by fernando on 10/12/16.
@@ -74,6 +75,8 @@ public class Listas
 
 
 		ArrayList<String> stringArrayList = new ArrayList<>();
+
+
 
 		//stringArrayList.
 
