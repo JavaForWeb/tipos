@@ -2,3 +2,4 @@
 build
 *.class
 *.bak
+output.txt
