@@ -28,13 +28,13 @@ import java.util.ListIterator;
 
 		System.out.println("\nContenido de la lista: ");
 		System.out.println(linkedlist);
-/*
+
     	// añadir First Element
 		linkedlist.addFirst("Sucre");
 
 		System.out.println("\nContenido de la lista: ");
 		System.out.println(linkedlist);
-/*
+
 		// modificar primer elemento
 		Object firstvar = linkedlist.get(0);
 		System.out.println("Primer elemento: " +firstvar);
@@ -43,7 +43,7 @@ import java.util.ListIterator;
 		System.out.println("\nContenido de la lista: ");
 		System.out.println(linkedlist);
 
-/*
+
          // add temp last item
 		linkedlist.addLast("Litoral");
 		System.out.println("\nContenido de la lista: ");
@@ -54,14 +54,19 @@ import java.util.ListIterator;
 		System.out.println("\nContenido de la lista: ");
 		System.out.println(linkedlist);
 
-/*
-		System.out.println("\nUsando descending Iterator: ");
-		Iterator<String> it = linkedlist.descendingIterator();
+		System.out.println("\nUsando ascending Iterator: ");
+		Iterator<String> it = linkedlist.iterator();
 		while (it.hasNext()) {
 			System.out.println (it.next());
 		}
 
-/*
+		System.out.println("\nUsando descending Iterator: ");
+		 it = linkedlist.descendingIterator();
+		while (it.hasNext()) {
+			System.out.println (it.next());
+		}
+
+
 
 		System.out.println("\nUsando list Iterator <---: ");
 		ListIterator<String> it2 = linkedlist.listIterator(5);
@@ -71,13 +76,12 @@ import java.util.ListIterator;
 			System.out.println (it2.previous());
 		}
 
-/*
+
 		System.out.println("\nUsando list Iterator -->: ");
 		it2 = linkedlist.listIterator(5);
 		while (it2.hasNext()) {
 			System.out.println (it2.next());
 		}
-		 */
 
 	}
 

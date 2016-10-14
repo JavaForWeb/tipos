@@ -36,7 +36,6 @@ public class Conjuntos
 			System.out.println("  " + color);
 		}
 
-		/*
 		System.out.println("\nResultados usando LinkedHashSet");
 		Set<String> conjuntos2 = new LinkedHashSet<>();
 
@@ -48,7 +47,7 @@ public class Conjuntos
 		for (String color: conjuntos2) {
 			System.out.println("  " + color);
 		}
-/*
+
 		System.out.println("\nResultados usando TreeSet");
 		Set<String> conjuntos3 = new TreeSet<>();
 
@@ -60,6 +59,6 @@ public class Conjuntos
 		for (String color: conjuntos3) {
 			System.out.println("  " + color);
 		}
-*/
+
 	}
 }

@@ -45,7 +45,7 @@ public class Mapas
 		}
 
 		System.out.println("\n--> Iterator<Map.Entry<String, Integer>> ");
-		Iterator<Map.Entry<String,Integer>>it = mapa1.entrySet().iterator();
+		Iterator<Map.Entry<String, Integer>>it = mapa1.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry<String,Integer> e = it.next();
 
@@ -59,7 +59,9 @@ public class Mapas
 			System.out.printf("%-15s %3d\n", color, mapa1.get(color));
 		}
 
+
 		System.out.println("\n\nResultados usando LinkedHashMap");
+
 		Map<String, Integer> mapa2 = new LinkedHashMap();
 
 		for (String color: colores) {
@@ -95,7 +97,5 @@ public class Mapas
 		for (String color: mapa3.keySet()) {
 			System.out.printf("%-15s %3d\n", color, mapa3.get(color));
 		}
-		/*
-*/
 	}
 }
