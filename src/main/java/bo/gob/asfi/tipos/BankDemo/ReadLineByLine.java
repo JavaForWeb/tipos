@@ -11,10 +11,11 @@ public class ReadLineByLine
 {
 	public void run()
 	{
+		String content = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo";
 		String str;
 
 		BufferedReader reader = new BufferedReader(
-			new StringReader(contentTextArea.getText()));
+			new StringReader(content));
 
 		try {
 			while ((str = reader.readLine()) != null) {

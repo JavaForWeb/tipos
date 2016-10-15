@@ -15,7 +15,7 @@ public class CopyFile
 		FileOutputStream out = null;
 
 		try {
-			in = new FileInputStream("./src/main/java/META-INF/MANIFEST.MF");
+			in = new FileInputStream("./src/main/java/META-INF/MANIFEST.MFx");
 			out = new FileOutputStream("output.txt");
 
 			int c;
@@ -26,7 +26,7 @@ public class CopyFile
 			}
 
 			System.out.println( "copiados " + n + " bytes");
-		}finally {
+		} finally {
 			if (in != null) {
 				in.close();
 			}
