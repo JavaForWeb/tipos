@@ -79,15 +79,15 @@ public class Main {
 
 
         //logs
-        LogExample.run();
+        //LogExample.run();
 
         //Schedulers
-        new HeartBeat().run();
+        //new HeartBeat().run();
 
         //threads
 
         //TestRunnableDemo.run();
-        //TestThreadDemo.run();
+        TestThreadDemo.run();
 
         //ThreadClassDemo.run();
 

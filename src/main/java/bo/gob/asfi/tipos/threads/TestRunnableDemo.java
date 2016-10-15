@@ -7,10 +7,10 @@ public class TestRunnableDemo
 {
 	public static void run() {
 
-		RunnableDemo R1 = new RunnableDemo( "Thread-1");
+		RunnableDemo R1 = new RunnableDemo( "Thread-AAAA");
 		R1.start();
 
-		RunnableDemo R2 = new RunnableDemo( "Thread-2");
+		RunnableDemo R2 = new RunnableDemo( "Thread-BBBB");
 		R2.start();
 	}
 }
