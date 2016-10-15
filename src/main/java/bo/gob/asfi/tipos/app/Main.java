@@ -1,20 +1,9 @@
 package bo.gob.asfi.tipos.app;
 
-import bo.gob.asfi.tipos.BankDemo.BankDemo;
-import bo.gob.asfi.tipos.BankDemo.HeartBeat;
-import bo.gob.asfi.tipos.collections.ListaEnlazada;
-import bo.gob.asfi.tipos.collections.Listas;
-import bo.gob.asfi.tipos.collections.Conjuntos;
-import bo.gob.asfi.tipos.collections.Mapas;
-import bo.gob.asfi.tipos.threads.JoinExample;
-import bo.gob.asfi.tipos.threads.JoinExample2;
-import bo.gob.asfi.tipos.threads.TestRunnableDemo;
-import bo.gob.asfi.tipos.threads.TestThreadDemo;
-import bo.gob.asfi.tipos.threads.ThreadClassDemo;
+import bo.gob.asfi.tipos.EquipoE.Buscador;
 import bo.gob.asfi.tipos.utils.Common;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public class Main {
 
@@ -79,19 +68,26 @@ public class Main {
 
 
         //logs
-        LogExample.run();
+       // LogExample.run();
 
         //Schedulers
-        new HeartBeat().run();
+     //   new HeartBeat().run();
 
         //threads
 
-        //TestRunnableDemo.run();
+      //  TestRunnableDemo.run();
         //TestThreadDemo.run();
 
         //ThreadClassDemo.run();
 
         //JoinExample2.run();
         //JoinExample.run();
+        try {
+            Buscador.run();
+
+        } catch( IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
