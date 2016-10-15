@@ -12,10 +12,10 @@ import bo.gob.asfi.tipos.threads.JoinExample2;
 import bo.gob.asfi.tipos.threads.TestRunnableDemo;
 import bo.gob.asfi.tipos.threads.TestThreadDemo;
 import bo.gob.asfi.tipos.threads.ThreadClassDemo;
+import bo.gob.asfi.tipos.EquipoE.Buscador;
 import bo.gob.asfi.tipos.utils.Common;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 
 public class Main {
 
@@ -35,9 +35,9 @@ public class Main {
 
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Common.displayTitle("tipos");
+        Common.displayTitle("Hackaton");
 	    //System.out.println("hello from Intellij ");
 
         /*
@@ -80,21 +80,32 @@ public class Main {
 
 
         //logs
-        //LogExample.run();
+       // LogExample.run();
 
         //Schedulers
-        //new HeartBeat().run();
+     //   new HeartBeat().run();
 
         //threads
 
         //TestRunnableDemo.run();
         //TestThreadDemo.run();
 
+        //Hackaton1TeamA.run();
         //ThreadClassDemo.run();
 
         //JoinExample2.run();
         //JoinExample.run();
 
-        new HackathonMain().run();
+        //new HackathonMain().run();
+
+
+        try {
+            Buscador.run();
+
+        } catch( IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
