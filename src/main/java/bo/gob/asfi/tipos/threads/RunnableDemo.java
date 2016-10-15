@@ -1,5 +1,7 @@
 package bo.gob.asfi.tipos.threads;
 
+import java.util.Random;
+
 /**
  * Created by fernando on 10/15/16.
  */
@@ -14,11 +16,19 @@ public class RunnableDemo implements Runnable
 	}
 
 	public void run() {
+		Random r = new Random();
 		System.out.println("Running " +  threadName );
 		try {
-			for(int i = 4; i > 0; i--) {
+			for(int i = 10; i > 0; i--) {
 				System.out.println("Thread: " + threadName + ", " + i);
 				// Let the thread sleep for a while.
+				if (r.nextBoolean()) {
+					System.out.println( threadName + "* * dentro del random ");
+					this.t.interrupt();
+
+					System.out.println( threadName +"* * despues de interrupt ");
+
+				}
 				Thread.sleep(50);
 			}
 		}catch (InterruptedException e) {

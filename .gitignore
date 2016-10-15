@@ -3,3 +3,4 @@ build
 *.class
 *.bak
 output.txt
+.idea/tipos.iml
