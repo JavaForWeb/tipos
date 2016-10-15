@@ -75,6 +75,25 @@ public class LecturaAdrian {
         Integer contadoR = 0;
 
 
+
+        for (City obj : listaCiudades) {
+            if (obj.getCityName().contains(ciudadBusqueda)) {
+
+
+                 System.out.print(obj.getCityName().toString() + " " + obj.getRegionID().toString() + " " + obj.getLatitude().toString() +  "\n");
+                                contadoR = contadoR + 1;
+
+            }
+
+        }
+
+        System.out.print("Número de resultado obtenidos: " + contadoR.toString() + "\n");
+
+        System.out.print("\n");
+        System.out.print("\n");
+
+        contadoR = 0;
+
         for (City obj : listaCiudades) {
             if (obj.getCityName().contains(ciudadBusqueda)) {
 
