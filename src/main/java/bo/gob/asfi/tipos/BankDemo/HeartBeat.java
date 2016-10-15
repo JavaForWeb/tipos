@@ -5,10 +5,13 @@ import java.util.TimerTask;
 /**
  * Created by fernando on 10/13/16.
  */
-public class HeartBeat extends TimerTask
+public class HeartBeat
 {
 
+
 	public void run() {
+
+
 		java.util.Timer t1 = new java.util.Timer();
 
 		int timeInterval = 1*1000;

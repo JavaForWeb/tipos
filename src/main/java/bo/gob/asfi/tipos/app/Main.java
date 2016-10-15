@@ -23,9 +23,9 @@ public class Main {
 
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Common.displayTitle("tipos");
+        Common.displayTitle("Hackaton");
 	    //System.out.println("hello from Intellij ");
 
         /*
@@ -68,16 +68,24 @@ public class Main {
 
 
         //logs
+<<<<<<< HEAD
        // LogExample.run();
 
         //Schedulers
      //   new HeartBeat().run();
+=======
+        //LogExample.run();
+
+        //Schedulers
+        //new HeartBeat().run();
+>>>>>>> c6f353351f1f0b317b77be92f1cdbcbba2f761cf
 
         //threads
 
       //  TestRunnableDemo.run();
         //TestThreadDemo.run();
 
+        Hackaton1TeamA.run();
         //ThreadClassDemo.run();
 
         //JoinExample2.run();
