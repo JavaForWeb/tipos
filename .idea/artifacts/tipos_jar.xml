@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="tipos:jar">
-    <output-path>$PROJECT_DIR$/build/artifacts/tipos_jar</output-path>
-    <root id="archive" name="tipos.jar">
-      <element id="module-output" name="tipos" />
-    </root>
-  </artifact>
-</component>
