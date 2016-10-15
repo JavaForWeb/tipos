@@ -3,7 +3,7 @@ package bo.gob.asfi.tipos.app;
 /**
  * Created by alesanchez on 15/10/2016.
  */
-public class Ciudades {
+public class CiudadesTeamA {
     private int cityId;
     private int countryId;
     private int regionId;
@@ -13,7 +13,7 @@ public class Ciudades {
         return "|"  + String.format("%-30s", this.city)   + "|" + String.format("%-30s", this.countryId) + "|" + String.format("%-30s", this.latitude) + "|" + String.format("%-30s", this.longitude) + "|" ;
     }
 
-    public Ciudades(int cityId, int countryId, int regionId, String city, double latitude, double longitude, String timeZone, int dmaID, String code) {
+    public CiudadesTeamA(int cityId, int countryId, int regionId, String city, double latitude, double longitude, String timeZone, int dmaID, String code) {
         this.cityId = cityId;
         this.countryId = countryId;
         this.regionId = regionId;

@@ -3,7 +3,7 @@ package bo.gob.asfi.tipos.app;
 /**
  * Created by alesanchez on 15/10/2016.
  */
-public class Region {
+public class RegionTeamA {
     private int RegionId;
     private int CountryId;
     private String Region;
@@ -12,7 +12,7 @@ public class Region {
         return RegionId;
     }
 
-    public Region(int regionId, int countryId, String region, String code, String ADM1Code) {
+    public RegionTeamA(int regionId, int countryId, String region, String code, String ADM1Code) {
         RegionId = regionId;
         CountryId = countryId;
         Region = region;
