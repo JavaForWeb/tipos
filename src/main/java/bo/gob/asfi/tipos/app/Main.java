@@ -72,8 +72,6 @@ public class Main {
 
         //System.setErr(OutputStreamWriter );
 
-        //new HeartBeat().run();
-
         //new SubFolders().run();
 
         //stack
@@ -83,6 +81,8 @@ public class Main {
         //logs
         LogExample.run();
 
+        //Schedulers
+        new HeartBeat().run();
 
         //threads
 
