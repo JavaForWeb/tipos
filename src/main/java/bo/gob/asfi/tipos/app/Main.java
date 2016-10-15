@@ -6,6 +6,7 @@ import bo.gob.asfi.tipos.collections.ListaEnlazada;
 import bo.gob.asfi.tipos.collections.Listas;
 import bo.gob.asfi.tipos.collections.Conjuntos;
 import bo.gob.asfi.tipos.collections.Mapas;
+import bo.gob.asfi.tipos.hackathon1.HackathonMain;
 import bo.gob.asfi.tipos.threads.JoinExample;
 import bo.gob.asfi.tipos.threads.JoinExample2;
 import bo.gob.asfi.tipos.threads.TestRunnableDemo;
@@ -87,11 +88,13 @@ public class Main {
         //threads
 
         //TestRunnableDemo.run();
-        TestThreadDemo.run();
+        //TestThreadDemo.run();
 
         //ThreadClassDemo.run();
 
         //JoinExample2.run();
         //JoinExample.run();
+
+        new HackathonMain().run();
     }
 }
