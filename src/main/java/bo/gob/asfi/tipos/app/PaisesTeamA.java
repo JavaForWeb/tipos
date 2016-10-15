@@ -3,7 +3,7 @@ package bo.gob.asfi.tipos.app;
 /**
  * Created by alesanchez on 15/10/2016.
  */
-public class Paises {
+public class PaisesTeamA {
     private int CountryId;
     private String Country;
     private String FIPS104;
@@ -17,7 +17,7 @@ public class Paises {
         CountryId = countryId;
     }
 
-    public Paises(int countryId, String country, String FIPS104, String ISO2, String ISO3, String ISON, String internet, String capital, String mapReference, String nationalitySingular, String nationalityPlural, String currency, String currencyCode, String population, String title, String comment) {
+    public PaisesTeamA(int countryId, String country, String FIPS104, String ISO2, String ISO3, String ISON, String internet, String capital, String mapReference, String nationalitySingular, String nationalityPlural, String currency, String currencyCode, String population, String title, String comment) {
         CountryId = countryId;
         Country = country;
         this.FIPS104 = FIPS104;

@@ -13,18 +13,18 @@ public class Hackaton1TeamA {
     String cadenaABuscar;
 
     static void run() throws IOException {
-        //Ciudades
+        //CiudadesTeamA
         BufferedReader br = new BufferedReader(new FileReader("./src/main/resources/fixtures/cities.txt"));
         // Leemos la primera linea
         String s1;
         int lineas = 0;
-        ArrayList<Ciudades> listaCiudades = new ArrayList<>();
+        ArrayList<CiudadesTeamA> listaCiudades = new ArrayList<>();
         while ((s1 = br.readLine())!=null)
         {
             s1 = s1.replace("\"","");
             if (lineas > 0) {
                 String[] p = s1.split(",");
-                Ciudades ciudad = new Ciudades(
+                CiudadesTeamA ciudad = new CiudadesTeamA(
                         Integer.parseInt(p[0]),
                         Integer.parseInt(p[1]),Integer.parseInt(p[2]),p[3],Double.parseDouble(p[4]),Double.parseDouble(p[5]),p[6],
                         Integer.parseInt(p[7]),p[8]);
@@ -32,17 +32,17 @@ public class Hackaton1TeamA {
             }
             lineas +=1;
         }
-        //Region
+        //RegionTeamA
         br = new BufferedReader(new FileReader("./src/main/resources/fixtures/Regions.txt"));
         // Leemos la primera linea
         lineas = 0;
-        ArrayList<Region> listaRegiones = new ArrayList<>();
+        ArrayList<RegionTeamA> listaRegiones = new ArrayList<>();
         while ((s1 = br.readLine())!=null)
         {
             s1 = s1.replace("\"","");
             if (lineas > 0) {
                 String[] p = s1.split(",");
-                Region region = new Region(
+                RegionTeamA region = new RegionTeamA(
                         Integer.parseInt(p[0]),
                         Integer.parseInt(p[1]),
                         p[2],
@@ -52,17 +52,17 @@ public class Hackaton1TeamA {
             }
             lineas +=1;
         }
-        //Paises
+        //PaisesTeamA
         br = new BufferedReader(new FileReader("./src/main/resources/fixtures/Countries.txt"));
         // Leemos la primera linea
         lineas = 0;
-        ArrayList<Paises> listaPaises = new ArrayList<>();
+        ArrayList<PaisesTeamA> listaPaises = new ArrayList<>();
         while ((s1 = br.readLine())!=null)
         {
             s1 = s1.replace("\"\"","\"_\"").replace("\"","");
             if (lineas > 0) {
                 String[] p = s1.split(",");
-                Paises pais = new Paises(
+                PaisesTeamA pais = new PaisesTeamA(
                         Integer.parseInt(p[0]),
                         p[1],
                         p[2],
@@ -87,8 +87,8 @@ public class Hackaton1TeamA {
         System.out.println("Ingrese la ciudad a ser buscada:\n");
         //For string
         String texto= scan.nextLine();
-        ArrayList<Ciudades> ciudadesEncontradas = new ArrayList<>();
-        for(Ciudades buscar:listaCiudades)
+        ArrayList<CiudadesTeamA> ciudadesEncontradas = new ArrayList<>();
+        for(CiudadesTeamA buscar:listaCiudades)
         {
             if (buscar.getCity().contains(texto))
             {
@@ -104,21 +104,21 @@ public class Hackaton1TeamA {
             System.out.println("|------------------------------|------------------------------|------------------------------|------------------------------|") ;
             System.out.println("|"  + String.format("%-30s", "Ciudad")   + "|" + String.format("%-30s", "Country Id") + "|" + String.format("%-30s", "Latitude") + "|" + String.format("%-30s", "Longitude") + "|") ;
             System.out.println("|------------------------------|------------------------------|------------------------------|------------------------------|") ;
-            for (Ciudades ciudad: ciudadesEncontradas)
+            for (CiudadesTeamA ciudad: ciudadesEncontradas)
             {
                 System.out.println(ciudad);
             }
             System.out.println("|------------------------------|------------------------------|------------------------------|------------------------------|") ;
             System.out.println("\n") ;
             System.out.println("|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|") ;
-            System.out.println("|"  + String.format("%-30s", "Ciudad")   + "|" + String.format("%-30s", "País") + "|" + String.format("%-30s", "Region") + "|" + String.format("%-30s", "Latitude") + "|" + String.format("%-30s", "Longitude") + "|") ;
+            System.out.println("|"  + String.format("%-30s", "Ciudad")   + "|" + String.format("%-30s", "País") + "|" + String.format("%-30s", "RegionTeamA") + "|" + String.format("%-30s", "Latitude") + "|" + String.format("%-30s", "Longitude") + "|") ;
             System.out.println("|------------------------------|------------------------------|------------------------------|------------------------------|------------------------------|") ;
-            for (Ciudades ciudad: ciudadesEncontradas)
+            for (CiudadesTeamA ciudad: ciudadesEncontradas)
             {
                 String NombreRegion, NombrePais;
                 NombreRegion = "";
                 NombrePais = "";
-                for(Region region: listaRegiones)
+                for(RegionTeamA region: listaRegiones)
                 {
                     if (region.getRegionId() == ciudad.getRegionId() )
                     {
@@ -126,7 +126,7 @@ public class Hackaton1TeamA {
                         break;
                     }
                 }
-                for(Paises pais: listaPaises)
+                for(PaisesTeamA pais: listaPaises)
                 {
                     if (pais.getCountryId() == ciudad.getCountryId() )
                     {
@@ -140,12 +140,12 @@ public class Hackaton1TeamA {
 
             System.out.println("\n") ;
             System.out.println("|------------------------------|------------------------------|------------------------------|") ;
-            System.out.println("|"  + String.format("%-30s", "Pais")   + "|" + String.format("%-30s", "Regiones") + "|" + String.format("%-30s", "Ciudades") + "|") ;
+            System.out.println("|"  + String.format("%-30s", "Pais")   + "|" + String.format("%-30s", "Regiones") + "|" + String.format("%-30s", "CiudadesTeamA") + "|") ;
             System.out.println("|------------------------------|------------------------------|------------------------------|") ;
-            for (Paises pais: listaPaises)
+            for (PaisesTeamA pais: listaPaises)
             {
                 int contadorRegiones = 0;
-                for (Region region : listaRegiones)
+                for (RegionTeamA region : listaRegiones)
                 {
                     if (region.getCountryId() == pais.getCountryId())
                     {
@@ -153,7 +153,7 @@ public class Hackaton1TeamA {
                     }
                 }
                 int contadorCiudad = 0;
-                for (Ciudades ciudad : listaCiudades)
+                for (CiudadesTeamA ciudad : listaCiudades)
                 {
                     if (ciudad.getCountryId() == pais.getCountryId())
                     {
