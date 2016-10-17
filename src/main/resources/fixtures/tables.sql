@@ -23,7 +23,7 @@ ALTER TABLE public."city"
 CREATE TABLE public."country"
 (
     "CountryId" integer,
-    "Country" integer,
+    "Country" character varying(50),
     "FIPS104" character varying(50),
     "ISO2" character varying(50),
     "ISO3" character varying(50),
@@ -37,7 +37,7 @@ CREATE TABLE public."country"
     "CurrencyCode" character varying(50),
     "Population" character varying(50),
     "Title" character varying(50),
-    "Comment" character varying(50),
+    "Comment" character varying(500),
     "TimeZone" character varying(10),
     PRIMARY KEY ("CountryId")
 )
