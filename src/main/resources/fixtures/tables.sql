@@ -49,7 +49,6 @@ TABLESPACE pg_default;
 ALTER TABLE public."country"
     OWNER to postgres;
 
-"RegionId","CountryId","Region","Code","ADM1Code"
 
 CREATE TABLE public."region"
 (
