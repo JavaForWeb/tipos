@@ -16,6 +16,7 @@ import bo.gob.asfi.tipos.EquipoE.Buscador;
 import bo.gob.asfi.tipos.utils.Common;
 
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 public class Main {
 
@@ -35,9 +36,9 @@ public class Main {
 
 
     }
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        Common.displayTitle("Hackaton");
+        Common.displayTitle("tipos");
 	    //System.out.println("hello from Intellij ");
 
         /*
