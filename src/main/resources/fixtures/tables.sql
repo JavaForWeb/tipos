@@ -1,4 +1,4 @@
-CREATE TABLE public."City"
+CREATE TABLE public."city"
 (
     "CityId" integer,
     "CountryId" integer,
@@ -16,11 +16,11 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."City"
+ALTER TABLE public."city"
     OWNER to postgres;
 
 
-CREATE TABLE public."Country"
+CREATE TABLE public."country"
 (
     "CountryId" integer,
     "Country" integer,
@@ -46,12 +46,12 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."Country"
+ALTER TABLE public."country"
     OWNER to postgres;
 
 "RegionId","CountryId","Region","Code","ADM1Code"
 
-CREATE TABLE public."Region"
+CREATE TABLE public."region"
 (
     "RegionId"  integer,
     "CountryId" integer,
@@ -65,7 +65,7 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE public."Region"
+ALTER TABLE public."region"
     OWNER to postgres;
 
 
